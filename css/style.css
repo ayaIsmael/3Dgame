@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --orangeColor: #FA9021;
+    --darkOrangeColor:  #E87D0E;
+    --secondFont : 'Rubik', sans-serif ;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+
+    animation-name: page-transition;
+    animation-duration: 1s;
+}
+@keyframes page-transition {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
+section{margin-bottom: 7rem;}
+/* home page */
+.homeContent{
+    background: linear-gradient(180.96deg, #000000 0.82%, #4A2800 129.1%);
+    backdrop-filter: blur(7px);
+}
+/* navbar */
+.navbar-brand{
+    font-weight: 800;
+    font-size: 29px;
+}
+.nav-item:not(:last-child){
+    margin-right: 88px;
+}
+.nav-item:last-child{
+    margin-right: 36px;
+}
+.nav-link{
+    color: #fff!important;
+    position: relative;
+}
+.navbar .btn{
+    color: #fff!important;
+    background-color: var(--orangeColor);
+    border-radius: 6px;
+    font-size: 13px;
+}
+.active::after{
+    content: url('../images/activelink.svg');
+    position: absolute;
+    top: 100%; left: 0;
+}
+/* end navbar */
+/* start header section */
+.header{
+    padding: 7rem 0;
+}
+.header h5{
+    color: var(--darkOrangeColor);
+    font-weight: 700;
+    font-size: 20px;
+}
+.header h1, .header h2{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 150%;
+}
+.header h2{font-size: 30px;}
+.header p{
+    font-weight: 500;
+    line-height: 200%;
+    margin-bottom: 50px;
+}
+.header .btn{
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
+    border-radius: 40px;
+    padding: 1rem 2rem;
+}
+.icon{
+    position: absolute;
+}
+.icon.one{
+    left: 0;
+    top: 45%;
+}
+.icon.two{
+    top: 0;
+    left: 20%;
+}
+.icon.three{
+    top: 0 ;
+    left: 75%;
+}
+/* end header section */
+/* start games section */
+.games h3{
+    font-family: var(--secondFont);
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 187.5%;
+}
+.games .btn, .projects .btn{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.11);
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+/* end games section */
+/* start Rectangle section */
+.head{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 187.5%;
+    margin-bottom: 4rem;
+}
+.rectangle h3{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 187.5%;
+}
+.rectangle p{
+    width: 40%;
+    line-height: 187.5%;
+}
+.rectangleimg{
+    position: relative;
+    z-index: 2;
+}
+.rectanglebg{
+    position: absolute;
+    top: 0;
+    left: 75%;
+    transform: translateY(-50%);
+}
+/* end Rectangle section */
+/* start majors section */
+.majors{
+    padding: 5rem 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)),
+    url('../images/majorsbg.png');
+    backdrop-filter: blur(2px);
+    background-size: cover;
+}
+.subhead{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 187.5%;
+    margin-bottom: 100px;
+}
+.majorsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.major{
+    width: 25%;
+    margin-bottom: 62px;
+}
+.major .majorImg{
+    display: inline-flex;
+    width: 65px;
+    height: 65px;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.major p{
+    font-weight: 500;
+    line-height: 187.5%;
+}
+/* end majors section */
+/* start loop section */
+.loop h1{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 187.5%;
+}
+.loopContainer{
+    background: #1C140F;
+    border-radius: 15px;
+    padding: 40px 60px;
+}
+.loopContainer h2{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 187.5%;
+}
+.inputGroup{
+    position: relative;
+}
+.inputGroup input{
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+}
+.inputGroup input::placeholder{
+    font-size: 13px;
+}
+.inputGroup .btn{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    color: #fff;
+    background-color: var(--darkOrangeColor);
+    font-size: 13px;
+}
+/* end loop section */
+/* start footer */
+footer{
+    padding-top: 80px;
+    background-color: #070707;
+}
+footer h2{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 150%;
+}
+footer h6{
+    font-weight: 500;
+    font-size: 17px;
+}
+.Sicon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    font-size: 17px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.Sicon:hover{
+    background-color: var(--orangeColor);
+}
+/* end footer */
+
+/* about page **************************************************************** */
+.aboutContent{
+    background: linear-gradient(179.5deg, #010101 -15.71%, #1A0E01 99.57%);
+}
+.parent{
+    font-size: 12px;
+    line-height: 208.5%;
+    margin-bottom: 40px;
+}
+.child{
+    color: var(--darkOrangeColor);
+}
+.title{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 180.5%;
+    margin-bottom: 4rem;
+}
+.feature{
+    background: #1C140F;
+    box-shadow: 0px 4px 94px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    margin-bottom: 1rem;
+}
+.feature .btn{
+    color: #fff;
+    background: rgba(176, 0, 220, 0.11);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 187.5%;
+}
+.feature h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 187.5%;
+}
+.feature p{
+    font-size: 14px;
+    line-height: 187.5%;
+}
+.superwomen {
+    background: #1C140F;
+    padding: 5rem 0;
+}
+.superwomen img{
+    transform: translateY(5rem);
+}
+.superwomenId p:first-child{
+    font-weight: 500;
+    line-height: 202.5%;
+}
+.superwomenId p:nth-child(2){
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 157.5%;
+    margin: 1rem 0;
+}
+.superwomenId p:last-child{
+    line-height: 202.5%;
+}
+.teamMember{
+    padding: 2rem 0;
+    background: #1C140F;
+    border-radius: 20px;
+}
+.teamMember p{
+    font-weight: 600;
+    font-size: 19px;
+}
+.teamMember span{
+    font-weight: 300;
+    color: #E8E8E8;
+}
+/* Portfolio page ******************************************** */
+.portfolioContent{
+    background: linear-gradient(177.34deg, #050301 -30.15%, #120A01 92.85%);
+}
+.head2{
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 180.5%;
+    text-align: center;
+}
+.subhead2{
+    font-weight: 500;
+    line-height: 187.5%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.services{
+    background: #1C140F;
+    border-radius: 10px;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.serviceicon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #FFECEC;
+}
+.service h3{
+    font-weight: 700;
+    font-size: 25px;
+}
+.verticalline{
+    width: 2px;
+    height: 128px;
+    background-color: #fff;
+}
+.video h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 180.5%;
+}
+.video p{
+    font-size: 14px;
+    line-height: 187.5%;
+    margin-bottom: 28px;
+}
+.art{
+    margin-bottom: 180px;
+}
+.artext h3{
+    font-weight: 500;
+    font-size: 30px;
+}
+.artext p{
+    font-size: 17px;
+}
+.artext .btn{
+    padding: .8rem 3rem;
+    color: #fff;
+    background: var(--darkOrangeColor);
+    border-radius: 0;
+}
+.customers{
+    background: #1C140F;
+}
+.customerstxt{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+.customer{
+    background: #0F0901;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+.customer p{
+    font-size: 14px;
+    line-height: 187.5%;
+    margin-top: 2rem;
+}
+.customer .name{
+    font-family: var(--secondFont);
+    font-weight: 500;
+    font-size: 18px;
+}
+.customer .name span{
+    color: #4F5665;
+    font-size: 14px;
+}
+.leftarrow, .rightarrow{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Contact page ******************************************** */
+.contactContent{
+    background: linear-gradient(176.32deg, #090501 -26.24%, #120A01 96.98%);
+}
+.wsicon{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #1C140F;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+.info p{
+    font-weight: 300; 
+    font-size: 20px;
+}
+.verticalline2{
+    width: 2px;
+    height: 100px;
+    background-color: #fff;
+}
+.form{
+    background: #1C140F;
+    position: relative;
+}
+.formtopbg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.formbottombg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form .container{
+    position: relative;
+    z-index: 5;
+}
+.form-label{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 175.4%;
+    letter-spacing: -0.3px;
+    color: #4F4F4F;
+}
+.form-control, .form-control:focus{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.07);
+    border: 0.6px solid #CECECE;
+    border: none;
+    border-radius: 9px;
+    box-shadow: none;
+}
+form .btn{
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    color: #fff!important;
+    background-color: var(--darkOrangeColor);
+}
+/* media ***************************************** */
+@media(max-width: 991px){
+    .header .col-lg-6:first-child{
+        padding-right: unset!important;
+    }
+    .games h3{font-size: 24px;}
+    .header h1{font-size: 32px;}
+    .head{
+        width: 100%;
+        font-size: 24px;
+    }
+    .rectangle p {
+        width: 100%;
+    }
+    .majors{
+        padding: 0 .75rem;
+    }
+    .major {
+        width: 50%;
+    }
+    .subhead{
+        width: 100%;
+    }
+    .superwomen img{
+        transform: translateY(0);
+    }
+    .head2{
+        font-size: 28px;
+    }
+    .services, .service{
+        flex-direction: column;
+    }
+    .verticalline{
+        transform: rotate(90deg);
+    }
+    .customerstxt{width: 100%;}
+    .verticalline2{
+        transform: rotate(90deg);
+    }
+    .infoicon{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
